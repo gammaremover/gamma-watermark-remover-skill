@@ -16,6 +16,20 @@ An [agent skill](SKILL.md) that lets AI coding agents remove the **"Made with Ga
 
 The removal is **structural and lossless** — the watermark badge and its gamma.app hyperlink are deleted as document objects; nothing is re-rendered, text stays selectable, slides stay editable. Processing is fully local.
 
+## What is this skill?
+
+This is an agent skill — a markdown instruction file that teaches AI coding agents how to remove the "Made with Gamma" watermark from Gamma.app exports. Once the skill is installed, Claude Code and OpenClaw recognize requests like "remove the gamma watermark from deck.pdf", install the [gamma-watermark-remover CLI](https://github.com/gammaremover/gamma-watermark-remover) on demand, run the removal, interpret the result, and remind you to review the cleaned file. Everything happens locally on your machine.
+
+The same `SKILL.md` file works in both agents because OpenClaw adopted the Claude Code skill format. There is nothing to compile and no service to sign up for — the skill is a single readable file you can audit before installing.
+
+## Example prompts
+
+Once installed, all of these just work:
+
+- "remove the gamma watermark from ~/Downloads/pitch.pdf"
+- "clean the Made with Gamma badge from every pptx in ./exports"
+- "this deck has a gamma.app watermark — get rid of it and keep the original"
+
 ## Install
 
 **Claude Code**
@@ -43,11 +57,28 @@ Project-scoped installs work too: drop the file into `.claude/skills/gamma-water
 3. Runs the removal and interprets the result (including the honest `may_remain` flag when a badge was flattened into the page image and cannot be removed structurally)
 4. Reminds the user to review the cleaned file and keep the original
 
-## Related
+## FAQ
 
-- **CLI + Python library**: [gammaremover/gamma-watermark-remover](https://github.com/gammaremover/gamma-watermark-remover) ([PyPI](https://pypi.org/project/gamma-watermark-remover/))
-- **Web version (no install, runs in your browser, no upload)**: [gammaremover.com](https://gammaremover.com)
-- How it works: [detection logic explained](https://github.com/gammaremover/gamma-watermark-remover#how-detection-works)
+**Which agents support this skill?**
+Claude Code and OpenClaw natively; any agent that reads Claude-format `SKILL.md` files will also pick it up.
+
+**Does the skill upload my files anywhere?**
+No. It drives the local CLI (`pipx install gamma-watermark-remover`), so files never leave your machine. If Python is unavailable, the skill points to [gammaremover.com](https://gammaremover.com), which processes files inside your browser without uploading either.
+
+**What formats does it handle?**
+PDF and PowerPoint (.pptx) exports from Gamma.app. Removal is structural and lossless.
+
+**What if the watermark cannot be removed?**
+The CLI reports when a badge was flattened into the page image; the skill instructs the agent to relay that honestly rather than retrying destructive workarounds.
+
+## Related Tools
+
+- **Web app** (browser-based, no upload): [gammaremover.com](https://gammaremover.com)
+- **CLI + Python library**: [gamma-watermark-remover](https://github.com/gammaremover/gamma-watermark-remover)
+- **Local web UI**: [gamma-watermark-remover-webui](https://github.com/gammaremover/gamma-watermark-remover-webui)
+- **MCP server** for Claude and AI agents: [gamma-watermark-remover-mcp](https://github.com/gammaremover/gamma-watermark-remover-mcp)
+- **Agent skill** for Claude Code and OpenClaw: [gamma-watermark-remover-skill](https://github.com/gammaremover/gamma-watermark-remover-skill)
+- **Curated Gamma resources**: [awesome-gamma](https://github.com/gammaremover/awesome-gamma)
 
 ## Responsible use
 
