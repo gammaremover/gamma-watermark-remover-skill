@@ -1,16 +1,16 @@
-# Gamma Watermark Remover — Skill de agente (Claude Code & OpenClaw 🦞)
+# Gamma Watermark Remover — Skill de agente for Claude Code and OpenClaw
 
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-8b3dff)](https://docs.anthropic.com/en/docs/claude-code)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-🦞%20skill-ff6b35)](https://github.com/gammaremover/gamma-watermark-remover-skill)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-skill-ff6b35)](https://github.com/gammaremover/gamma-watermark-remover-skill)
 [![CLI on PyPI](https://img.shields.io/pypi/v/gamma-watermark-remover?color=8b3dff&label=CLI%20on%20PyPI)](https://pypi.org/project/gamma-watermark-remover/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-8b3dff.svg)](LICENSE)
-[![Web version](https://img.shields.io/badge/🌐%20Web%20version-gammaremover.com-8b3dff)](https://gammaremover.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-8b3dff.svg)](../LICENSE)
+[![Web version](https://img.shields.io/badge/Web%20version-gammaremover.com-8b3dff)](https://gammaremover.com)
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | **Español** | [Français](README.fr.md) | [Deutsch](README.de.md) | [Português](README.pt-BR.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Italiano](README.it.md) | [Bahasa Indonesia](README.id.md) | [العربية](README.ar.md) | [हिन्दी](README.hi.md)
+[English](../README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | **Español** | [Français](README.fr.md) | [Deutsch](README.de.md) | [Português](README.pt-BR.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Italiano](README.it.md) | [Bahasa Indonesia](README.id.md) | [العربية](README.ar.md) | [हिन्दी](README.hi.md)
 
-![Gamma Watermark Remover — remove the Made with Gamma badge from PDF & PPTX](banner.webp)
+![Gamma Watermark Remover — remove the Made with Gamma badge from PDF & PPTX](../banner.webp)
 
-Un [skill de agente](SKILL.md) que permite a los agentes de programación con IA eliminar la marca de agua **"Made with Gamma"** de archivos PDF y PowerPoint (.pptx) exportados desde [Gamma.app](https://gamma.app). Una vez instalado, solo pídele a tu agente:
+Un [skill de agente](../SKILL.md) que permite a los agentes de programación con IA eliminar la marca de agua **"Made with Gamma"** de archivos PDF y PowerPoint (.pptx) exportados desde [Gamma.app](https://gamma.app). Una vez instalado, solo pídele a tu agente:
 
 > *"elimina la marca de agua de Gamma de deck.pdf"* ("remove the gamma watermark from deck.pdf")
 

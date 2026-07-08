@@ -1,16 +1,16 @@
-# Gamma 워터마크 제거기 — 에이전트 스킬 (Claude Code & OpenClaw 🦞)
+# Gamma 워터마크 제거기 — 에이전트 스킬 for Claude Code and OpenClaw
 
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-8b3dff)](https://docs.anthropic.com/en/docs/claude-code)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-🦞%20skill-ff6b35)](https://github.com/gammaremover/gamma-watermark-remover-skill)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-skill-ff6b35)](https://github.com/gammaremover/gamma-watermark-remover-skill)
 [![CLI on PyPI](https://img.shields.io/pypi/v/gamma-watermark-remover?color=8b3dff&label=CLI%20on%20PyPI)](https://pypi.org/project/gamma-watermark-remover/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-8b3dff.svg)](LICENSE)
-[![Web version](https://img.shields.io/badge/🌐%20Web%20version-gammaremover.com-8b3dff)](https://gammaremover.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-8b3dff.svg)](../LICENSE)
+[![Web version](https://img.shields.io/badge/Web%20version-gammaremover.com-8b3dff)](https://gammaremover.com)
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | **한국어** | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Português](README.pt-BR.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Italiano](README.it.md) | [Bahasa Indonesia](README.id.md) | [العربية](README.ar.md) | [हिन्दी](README.hi.md)
+[English](../README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | **한국어** | [Español](README.es.md) | [Français](README.fr.md) | [Deutsch](README.de.md) | [Português](README.pt-BR.md) | [Русский](README.ru.md) | [Türkçe](README.tr.md) | [Italiano](README.it.md) | [Bahasa Indonesia](README.id.md) | [العربية](README.ar.md) | [हिन्दी](README.hi.md)
 
-![Gamma Watermark Remover — remove the Made with Gamma badge from PDF & PPTX](banner.webp)
+![Gamma Watermark Remover — remove the Made with Gamma badge from PDF & PPTX](../banner.webp)
 
-[Gamma.app](https://gamma.app)에서 내보낸 PDF 및 PowerPoint (.pptx) 파일의 **"Made with Gamma"** 워터마크를 AI 코딩 에이전트가 제거할 수 있게 해주는 [에이전트 스킬](SKILL.md)입니다. 설치 후 에이전트에게 다음과 같이 요청하기만 하면 됩니다:
+[Gamma.app](https://gamma.app)에서 내보낸 PDF 및 PowerPoint (.pptx) 파일의 **"Made with Gamma"** 워터마크를 AI 코딩 에이전트가 제거할 수 있게 해주는 [에이전트 스킬](../SKILL.md)입니다. 설치 후 에이전트에게 다음과 같이 요청하기만 하면 됩니다:
 
 > *"deck.pdf에서 Gamma 워터마크 제거해 줘"* ("remove the gamma watermark from deck.pdf")
 
